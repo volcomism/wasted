@@ -71,7 +71,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider :virtualbox do |vb, override|
     cnf['box_cpus'] = 2 if cnf['box_cpus'].nil?
-    cnf['box_memory'] = 1024 if cnf['box_memory'].nil?
+    cnf['box_memory'] = 4096 if cnf['box_memory'].nil?
 
     vb.customize ['modifyvm', :id, '--cpus', cnf['box_cpus']]
     vb.customize ['modifyvm', :id, '--memory', cnf['box_memory']]

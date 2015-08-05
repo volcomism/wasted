@@ -41,6 +41,6 @@ node default {
     command => 'r10k -v info puppetfile install && touch modules/.r10k_stamp',
     cwd     => '/vagrant/vagrant',
     onlyif  => 'test ! -e modules/.r10k_stamp || test modules/.r10k_stamp -ot Puppetfile',
-    require => Package['ruby', 'git', 'r10k']
+#    require => Package['ruby', 'git', 'r10k']
   }
 }
