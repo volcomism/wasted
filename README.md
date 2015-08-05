@@ -69,7 +69,11 @@ The config makes use of but does not require:
 
 To update vbox guest extensions automatically you can use:
  - vagrant-vbguest
-
+ ```
+  # vagrant plugin install vagrant-hostmanager
+  # vagrant plugin install vagrant-cachier
+  # vagrant plugin install vagrant-vbguest
+ ```
 ### LXC
 If you are using LXC (instead of VirtualBox) obviously you should have `lxc` and a recent kernel (>3.5) installed.
 
