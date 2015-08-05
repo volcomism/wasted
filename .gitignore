@@ -1,3 +1,4 @@
+.idea
 .vagrant
 /modules/*
 /modules/.r10k_stamp
