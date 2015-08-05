@@ -36,6 +36,7 @@ end
 Vagrant.configure("2") do |config|
   config.vm.box = cnf['box_name']
   config.vm.hostname = cnf['vhost']
+  config.ssh.forward_agent = true
 
   # Use vagrant-hostmanager if installed
   if Vagrant.has_plugin?('vagrant-hostmanager')
